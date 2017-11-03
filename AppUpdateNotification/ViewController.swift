@@ -7,12 +7,23 @@
 //
 
 import UIKit
+import UserNotifications
 
+@available(iOS 10.0, *)
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let badgeCount: Int = 1
+        let application = UIApplication.shared
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options:[.badge, .alert, .sound]) { (granted, error) in
+            // Enable or disable features based on authorization.
+        }
+        application.registerForRemoteNotifications()
+        application.applicationIconBadgeNumber = badgeCount
+        
     }
 
     override func didReceiveMemoryWarning() {

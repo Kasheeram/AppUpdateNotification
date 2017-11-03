@@ -15,6 +15,7 @@
 		68568AC71FA72705003206E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68568AC51FA72705003206E2 /* LaunchScreen.storyboard */; };
 		68568AD21FA72705003206E2 /* AppUpdateNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68568AD11FA72705003206E2 /* AppUpdateNotificationTests.swift */; };
 		68568ADD1FA72705003206E2 /* AppUpdateNotificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68568ADC1FA72705003206E2 /* AppUpdateNotificationUITests.swift */; };
+		9BD60A1EC2822F3C7770464C /* Pods_AppUpdateNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1249DBDD937D45C41D2DAAF /* Pods_AppUpdateNotification.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CAFBE951D277E73FB0DB69E /* Pods-AppUpdateNotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppUpdateNotification.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppUpdateNotification/Pods-AppUpdateNotification.debug.xcconfig"; sourceTree = "<group>"; };
+		6667E8039267809BF6F2083A /* Pods-AppUpdateNotification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppUpdateNotification.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppUpdateNotification/Pods-AppUpdateNotification.release.xcconfig"; sourceTree = "<group>"; };
 		68568AB61FA72704003206E2 /* AppUpdateNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppUpdateNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68568AB91FA72704003206E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68568ABB1FA72704003206E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		68568AD81FA72705003206E2 /* AppUpdateNotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppUpdateNotificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68568ADC1FA72705003206E2 /* AppUpdateNotificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateNotificationUITests.swift; sourceTree = "<group>"; };
 		68568ADE1FA72705003206E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1249DBDD937D45C41D2DAAF /* Pods_AppUpdateNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppUpdateNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD60A1EC2822F3C7770464C /* Pods_AppUpdateNotification.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,8 @@
 				68568AD01FA72705003206E2 /* AppUpdateNotificationTests */,
 				68568ADB1FA72705003206E2 /* AppUpdateNotificationUITests */,
 				68568AB71FA72704003206E2 /* Products */,
+				A2C64F6117D5294B8CAF23D5 /* Pods */,
+				F2B0E5309E8FFB2DE231A318 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +135,23 @@
 			path = AppUpdateNotificationUITests;
 			sourceTree = "<group>";
 		};
+		A2C64F6117D5294B8CAF23D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CAFBE951D277E73FB0DB69E /* Pods-AppUpdateNotification.debug.xcconfig */,
+				6667E8039267809BF6F2083A /* Pods-AppUpdateNotification.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2B0E5309E8FFB2DE231A318 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1249DBDD937D45C41D2DAAF /* Pods_AppUpdateNotification.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68568AE11FA72705003206E2 /* Build configuration list for PBXNativeTarget "AppUpdateNotification" */;
 			buildPhases = (
+				8DAAAFE154721FBE933B12EA /* [CP] Check Pods Manifest.lock */,
 				68568AB21FA72704003206E2 /* Sources */,
 				68568AB31FA72704003206E2 /* Frameworks */,
 				68568AB41FA72704003206E2 /* Resources */,
+				09FA7DA4A73E4728E0CC993F /* [CP] Embed Pods Frameworks */,
+				FBF7D94FEA9D5E8810A1121A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09FA7DA4A73E4728E0CC993F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AppUpdateNotification/Pods-AppUpdateNotification-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Siren/Siren.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Siren.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppUpdateNotification/Pods-AppUpdateNotification-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DAAAFE154721FBE933B12EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppUpdateNotification-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBF7D94FEA9D5E8810A1121A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppUpdateNotification/Pods-AppUpdateNotification-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		68568AB21FA72704003206E2 /* Sources */ = {
@@ -428,12 +509,15 @@
 		};
 		68568AE21FA72705003206E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CAFBE951D277E73FB0DB69E /* Pods-AppUpdateNotification.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5N8V3LY748;
 				INFOPLIST_FILE = AppUpdateNotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = spacebasic.com.AppUpdateNotification;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spacebasic.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -442,12 +526,15 @@
 		};
 		68568AE31FA72705003206E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6667E8039267809BF6F2083A /* Pods-AppUpdateNotification.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5N8V3LY748;
 				INFOPLIST_FILE = AppUpdateNotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = spacebasic.com.AppUpdateNotification;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spacebasic.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18836FE6AB8F1A1BA8ED51F610BE95DB /* Pods-AppUpdateNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED1F029F175CFEC1DD05F12D1050BB1B /* Pods-AppUpdateNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		396DC76B9EEFAD68201FE344EFE8C466 /* SirenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75095246FB341AB9A67124E8C9909E5 /* SirenDelegate.swift */; };
+		67BB4A2FA9E0429F444FEAAFD29E23BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		76214CC71452DE6D4CCE233C41B8C47E /* SirenBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CB3802EAECC0221C59D6525B29881 /* SirenBundleExtension.swift */; };
+		7EF092D5C8EDC6DD533B51F7C7885E00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		86B0C1EB5196AC625226A6C476E7BCB7 /* SirenDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8906EE2A298C198F459AEEE2B9E870CF /* SirenDateExtension.swift */; };
+		893CF33BE4F9BA5BB247EA407B26A46E /* Siren.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07C980E786A5FF8A9EDAB7F4B94BB0C /* Siren.swift */; };
+		982E1D8AD9DCE56B1485206813387795 /* Pods-AppUpdateNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD647AFF753B2C6BEC48624CC9C0DD2 /* Pods-AppUpdateNotification-dummy.m */; };
+		99D2EFF4CD92F809B44BACFBA7A8E921 /* SirenTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3495538944442D2A4D662C83548CBEFE /* SirenTestHelper.swift */; };
+		B8C7EB07C168EAD30912B874872FD3A7 /* SirenLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E01D69D5962CC33C9812FC8D703CE4 /* SirenLog.swift */; };
+		E924D915919B1FDE8411E4E781824C2B /* Siren-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C78271960B7BA6DAA0C2D7F7590627 /* Siren-dummy.m */; };
+		EB1E052484266DC210DC77D36C1EA4ED /* Siren-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91544EE0D4168CE792A0F2AE7DBA4373 /* Siren-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFDC3B190034F9AC6FE5E0BED68B61F2 /* Siren.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E0A72110F482FAC939A1DBF4579333B /* Siren.bundle */; };
+		F42ACC476851D0D1248374AE6053D3B1 /* SirenUIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A87F622B8B9A5FA25C715093035A5B /* SirenUIAlertControllerExtension.swift */; };
+		FABFEDCF1C3CEC9200864CBEAD1E7AE7 /* SirenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10E93666DC2555A854CBE7FCAD4F0D5 /* SirenViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72D47AFFF32F434792B8D844C6226BA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72822393DEC6D18B4BB90348DBB5CC14;
+			remoteInfo = Siren;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		030779995E4A36B73A247D6F7711119D /* Siren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Siren.framework; path = Siren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CAC752EAA2FB2C9C5CE8037AD17ED3D /* Siren-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Siren-prefix.pch"; sourceTree = "<group>"; };
+		225D931066F777B1A93208862304A828 /* Pods-AppUpdateNotification-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppUpdateNotification-acknowledgements.plist"; sourceTree = "<group>"; };
+		2A6686BA9CB4BF52FE7B958E90B692CF /* Pods-AppUpdateNotification-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppUpdateNotification-resources.sh"; sourceTree = "<group>"; };
+		2B16E9020CF7490131CDB82682AACB01 /* Siren.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Siren.xcconfig; sourceTree = "<group>"; };
+		2E0A72110F482FAC939A1DBF4579333B /* Siren.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Siren.bundle; path = Sources/Siren.bundle; sourceTree = "<group>"; };
+		3495538944442D2A4D662C83548CBEFE /* SirenTestHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SirenTestHelper.swift; path = Sources/SirenTestHelper.swift; sourceTree = "<group>"; };
+		3C05FE4FC8A22A80A237E03E2C02D0E1 /* Siren.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Siren.modulemap; sourceTree = "<group>"; };
+		4B8E605DE65CEA2C234C6CF47CF7B8C2 /* Pods-AppUpdateNotification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppUpdateNotification.release.xcconfig"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		68D46A7464837897DCB3932ED9794529 /* Pods_AppUpdateNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AppUpdateNotification.framework; path = "Pods-AppUpdateNotification.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FE0D85B8A99111E5D759DA56CC2519B /* Pods-AppUpdateNotification-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppUpdateNotification-frameworks.sh"; sourceTree = "<group>"; };
+		7B39908A90BFCE401207326F794F04D8 /* Pods-AppUpdateNotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppUpdateNotification.debug.xcconfig"; sourceTree = "<group>"; };
+		83C78271960B7BA6DAA0C2D7F7590627 /* Siren-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Siren-dummy.m"; sourceTree = "<group>"; };
+		8416B8CAD7BC6AEF096926C43125048E /* Pods-AppUpdateNotification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AppUpdateNotification.modulemap"; sourceTree = "<group>"; };
+		86A87F622B8B9A5FA25C715093035A5B /* SirenUIAlertControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SirenUIAlertControllerExtension.swift; path = Sources/SirenUIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		8906EE2A298C198F459AEEE2B9E870CF /* SirenDateExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SirenDateExtension.swift; path = Sources/SirenDateExtension.swift; sourceTree = "<group>"; };
+		91544EE0D4168CE792A0F2AE7DBA4373 /* Siren-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Siren-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99C1918C2E1A6DC2B0E395EAE8AB3AA6 /* Pods-AppUpdateNotification-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppUpdateNotification-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A14C810E67B243A11BE1214E7BE9727B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8E01D69D5962CC33C9812FC8D703CE4 /* SirenLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SirenLog.swift; path = Sources/SirenLog.swift; sourceTree = "<group>"; };
+		AB3CB3802EAECC0221C59D6525B29881 /* SirenBundleExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SirenBundleExtension.swift; path = Sources/SirenBundleExtension.swift; sourceTree = "<group>"; };
+		ACD647AFF753B2C6BEC48624CC9C0DD2 /* Pods-AppUpdateNotification-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppUpdateNotification-dummy.m"; sourceTree = "<group>"; };
+		B10E93666DC2555A854CBE7FCAD4F0D5 /* SirenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SirenViewController.swift; path = Sources/SirenViewController.swift; sourceTree = "<group>"; };
+		B6BD76D509469A2DE08096EC1D06E47F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07C980E786A5FF8A9EDAB7F4B94BB0C /* Siren.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Siren.swift; path = Sources/Siren.swift; sourceTree = "<group>"; };
+		D75095246FB341AB9A67124E8C9909E5 /* SirenDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SirenDelegate.swift; path = Sources/SirenDelegate.swift; sourceTree = "<group>"; };
+		ED1F029F175CFEC1DD05F12D1050BB1B /* Pods-AppUpdateNotification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppUpdateNotification-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CAB73BE4A0585F54CDA116E39822228 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BB4A2FA9E0429F444FEAAFD29E23BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3B0F28D2FB8475B2B337B623C8C4C90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF092D5C8EDC6DD533B51F7C7885E00 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		031BD4BD2CE292B980A440322056B8DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68D46A7464837897DCB3932ED9794529 /* Pods_AppUpdateNotification.framework */,
+				030779995E4A36B73A247D6F7711119D /* Siren.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20B9EFFE9546D65095EB95D861F376FB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6BD76D509469A2DE08096EC1D06E47F /* Info.plist */,
+				3C05FE4FC8A22A80A237E03E2C02D0E1 /* Siren.modulemap */,
+				2B16E9020CF7490131CDB82682AACB01 /* Siren.xcconfig */,
+				83C78271960B7BA6DAA0C2D7F7590627 /* Siren-dummy.m */,
+				1CAC752EAA2FB2C9C5CE8037AD17ED3D /* Siren-prefix.pch */,
+				91544EE0D4168CE792A0F2AE7DBA4373 /* Siren-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Siren";
+			sourceTree = "<group>";
+		};
+		32A7D95397B358FA3536BD7E9BFF9B76 /* Siren */ = {
+			isa = PBXGroup;
+			children = (
+				C07C980E786A5FF8A9EDAB7F4B94BB0C /* Siren.swift */,
+				AB3CB3802EAECC0221C59D6525B29881 /* SirenBundleExtension.swift */,
+				8906EE2A298C198F459AEEE2B9E870CF /* SirenDateExtension.swift */,
+				D75095246FB341AB9A67124E8C9909E5 /* SirenDelegate.swift */,
+				A8E01D69D5962CC33C9812FC8D703CE4 /* SirenLog.swift */,
+				3495538944442D2A4D662C83548CBEFE /* SirenTestHelper.swift */,
+				86A87F622B8B9A5FA25C715093035A5B /* SirenUIAlertControllerExtension.swift */,
+				B10E93666DC2555A854CBE7FCAD4F0D5 /* SirenViewController.swift */,
+				58A8EAF3B6F613DDDB69080F223ED401 /* Resources */,
+				20B9EFFE9546D65095EB95D861F376FB /* Support Files */,
+			);
+			name = Siren;
+			path = Siren;
+			sourceTree = "<group>";
+		};
+		51060311293C4F3A983B4C051F4A11EE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				688F71FCAF7355F9681D2CBAA21F44F0 /* Pods-AppUpdateNotification */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		58A8EAF3B6F613DDDB69080F223ED401 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E0A72110F482FAC939A1DBF4579333B /* Siren.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		688F71FCAF7355F9681D2CBAA21F44F0 /* Pods-AppUpdateNotification */ = {
+			isa = PBXGroup;
+			children = (
+				A14C810E67B243A11BE1214E7BE9727B /* Info.plist */,
+				8416B8CAD7BC6AEF096926C43125048E /* Pods-AppUpdateNotification.modulemap */,
+				99C1918C2E1A6DC2B0E395EAE8AB3AA6 /* Pods-AppUpdateNotification-acknowledgements.markdown */,
+				225D931066F777B1A93208862304A828 /* Pods-AppUpdateNotification-acknowledgements.plist */,
+				ACD647AFF753B2C6BEC48624CC9C0DD2 /* Pods-AppUpdateNotification-dummy.m */,
+				6FE0D85B8A99111E5D759DA56CC2519B /* Pods-AppUpdateNotification-frameworks.sh */,
+				2A6686BA9CB4BF52FE7B958E90B692CF /* Pods-AppUpdateNotification-resources.sh */,
+				ED1F029F175CFEC1DD05F12D1050BB1B /* Pods-AppUpdateNotification-umbrella.h */,
+				7B39908A90BFCE401207326F794F04D8 /* Pods-AppUpdateNotification.debug.xcconfig */,
+				4B8E605DE65CEA2C234C6CF47CF7B8C2 /* Pods-AppUpdateNotification.release.xcconfig */,
+			);
+			name = "Pods-AppUpdateNotification";
+			path = "Target Support Files/Pods-AppUpdateNotification";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9E52325B1745D76E8CC86290360441E4 /* Pods */,
+				031BD4BD2CE292B980A440322056B8DD /* Products */,
+				51060311293C4F3A983B4C051F4A11EE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9E52325B1745D76E8CC86290360441E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32A7D95397B358FA3536BD7E9BFF9B76 /* Siren */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		74DD66E3C86EF06F7FCB41778882D8D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1E052484266DC210DC77D36C1EA4ED /* Siren-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8AABA14D361DA0DE446BFA7A21FF292 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18836FE6AB8F1A1BA8ED51F610BE95DB /* Pods-AppUpdateNotification-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		25C892C4587795885A83967981E919E0 /* Pods-AppUpdateNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E351760AB3182E839DEAEEA5D31E7B3 /* Build configuration list for PBXNativeTarget "Pods-AppUpdateNotification" */;
+			buildPhases = (
+				A43AA2EC02F4685E443CFB73E6F6A071 /* Sources */,
+				B3B0F28D2FB8475B2B337B623C8C4C90 /* Frameworks */,
+				A8AABA14D361DA0DE446BFA7A21FF292 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFC083D228D7C26593DA632C3B867CFC /* PBXTargetDependency */,
+			);
+			name = "Pods-AppUpdateNotification";
+			productName = "Pods-AppUpdateNotification";
+			productReference = 68D46A7464837897DCB3932ED9794529 /* Pods_AppUpdateNotification.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		72822393DEC6D18B4BB90348DBB5CC14 /* Siren */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB58378655D55A77E6911A83C90D98BA /* Build configuration list for PBXNativeTarget "Siren" */;
+			buildPhases = (
+				EEE380DF4414A166B734247ABA059CDD /* Sources */,
+				1CAB73BE4A0585F54CDA116E39822228 /* Frameworks */,
+				CE0B1C54D9D3BC26CF15106A03CD2471 /* Resources */,
+				74DD66E3C86EF06F7FCB41778882D8D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Siren;
+			productName = Siren;
+			productReference = 030779995E4A36B73A247D6F7711119D /* Siren.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 031BD4BD2CE292B980A440322056B8DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25C892C4587795885A83967981E919E0 /* Pods-AppUpdateNotification */,
+				72822393DEC6D18B4BB90348DBB5CC14 /* Siren */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE0B1C54D9D3BC26CF15106A03CD2471 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDC3B190034F9AC6FE5E0BED68B61F2 /* Siren.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A43AA2EC02F4685E443CFB73E6F6A071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				982E1D8AD9DCE56B1485206813387795 /* Pods-AppUpdateNotification-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE380DF4414A166B734247ABA059CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E924D915919B1FDE8411E4E781824C2B /* Siren-dummy.m in Sources */,
+				893CF33BE4F9BA5BB247EA407B26A46E /* Siren.swift in Sources */,
+				76214CC71452DE6D4CCE233C41B8C47E /* SirenBundleExtension.swift in Sources */,
+				86B0C1EB5196AC625226A6C476E7BCB7 /* SirenDateExtension.swift in Sources */,
+				396DC76B9EEFAD68201FE344EFE8C466 /* SirenDelegate.swift in Sources */,
+				B8C7EB07C168EAD30912B874872FD3A7 /* SirenLog.swift in Sources */,
+				99D2EFF4CD92F809B44BACFBA7A8E921 /* SirenTestHelper.swift in Sources */,
+				F42ACC476851D0D1248374AE6053D3B1 /* SirenUIAlertControllerExtension.swift in Sources */,
+				FABFEDCF1C3CEC9200864CBEAD1E7AE7 /* SirenViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFC083D228D7C26593DA632C3B867CFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Siren;
+			target = 72822393DEC6D18B4BB90348DBB5CC14 /* Siren */;
+			targetProxy = 72D47AFFF32F434792B8D844C6226BA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12C4B864767C59600DBFA238F1E2F8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		4BAEF3239AA4080E746FBC53E474D0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B16E9020CF7490131CDB82682AACB01 /* Siren.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Siren/Siren-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Siren/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Siren/Siren.modulemap";
+				PRODUCT_NAME = Siren;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59F0302F2371FCC6B73EF0A418D40734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		99CC028DDAC79D7EAE4C2DA53A0BABF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B39908A90BFCE401207326F794F04D8 /* Pods-AppUpdateNotification.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AppUpdateNotification/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppUpdateNotification/Pods-AppUpdateNotification.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AppUpdateNotification;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A7AA6377A64FB430ACFA4AD55D0DE89A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B8E605DE65CEA2C234C6CF47CF7B8C2 /* Pods-AppUpdateNotification.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AppUpdateNotification/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppUpdateNotification/Pods-AppUpdateNotification.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AppUpdateNotification;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D213BABD34EE0BACEFB900F9E2E2A595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B16E9020CF7490131CDB82682AACB01 /* Siren.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Siren/Siren-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Siren/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Siren/Siren.modulemap";
+				PRODUCT_NAME = Siren;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F0302F2371FCC6B73EF0A418D40734 /* Debug */,
+				12C4B864767C59600DBFA238F1E2F8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E351760AB3182E839DEAEEA5D31E7B3 /* Build configuration list for PBXNativeTarget "Pods-AppUpdateNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CC028DDAC79D7EAE4C2DA53A0BABF5 /* Debug */,
+				A7AA6377A64FB430ACFA4AD55D0DE89A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB58378655D55A77E6911A83C90D98BA /* Build configuration list for PBXNativeTarget "Siren" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BAEF3239AA4080E746FBC53E474D0E8 /* Debug */,
+				D213BABD34EE0BACEFB900F9E2E2A595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

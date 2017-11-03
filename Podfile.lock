@@ -1,0 +1,22 @@
+PODS:
+  - Siren (2.0.8)
+
+DEPENDENCIES:
+  - Siren (from `https://github.com/ArtSabintsev/Siren.git`, branch `swift3.2`)
+
+EXTERNAL SOURCES:
+  Siren:
+    :branch: swift3.2
+    :git: https://github.com/ArtSabintsev/Siren.git
+
+CHECKOUT OPTIONS:
+  Siren:
+    :commit: f6590001df279b76ac05ea3d06ab347e44559441
+    :git: https://github.com/ArtSabintsev/Siren.git
+
+SPEC CHECKSUMS:
+  Siren: 4269fa935d0d890ba57ca7cce0569cc285456ca9
+
+PODFILE CHECKSUM: 9b85fadc490fc993c8d8f246ffce740442899c59
+
+COCOAPODS: 1.3.1
